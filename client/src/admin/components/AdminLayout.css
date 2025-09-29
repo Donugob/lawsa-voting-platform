@@ -1,0 +1,73 @@
+/* client/src/admin/components/AdminLayout.css */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F4F7F6; /* Our clean, off-white background for content */
+}
+
+.admin-sidebar {
+  width: 260px;
+  background-color: #0D1B2A; /* Deep Navy to match the voter theme */
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+.admin-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for better spacing */
+  flex-grow: 1;
+}
+
+.admin-sidebar nav a {
+  font-family: 'Montserrat', sans-serif;
+  color: #bdc3c7;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 500;
+}
+
+.admin-sidebar nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.admin-sidebar nav a.active {
+  background-color: #1ABC9C; /* Our Teal accent */
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.logout-button-sidebar {
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.logout-button-sidebar:hover {
+  background-color: #e74c3c;
+  color: #FFFFFF;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 50px;
+  overflow-y: auto;
+}
